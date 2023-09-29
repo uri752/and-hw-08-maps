@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/mapsFragment">
+
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="ru.netology.andhw_08_maps.app.ui.MapsFragment"
+        android:label="MapsFragment" >
+        <action
+            android:id="@+id/action_mapsFragment_to_pointsFragment"
+            app:destination="@id/pointsFragment" />
+        <action
+            android:id="@+id/action_mapsFragment_to_dialogPointFragment"
+            app:destination="@id/dialogPointFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointsFragment"
+        android:name="ru.netology.andhw_08_maps.app.ui.PointsFragment"
+        android:label="PointsFragment" >
+        <action
+            android:id="@+id/action_pointsFragment_to_pointFragment"
+            app:destination="@id/pointFragment" />
+        <action
+            android:id="@+id/action_pointsFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pointFragment"
+        android:name="ru.netology.andhw_08_maps.app.ui.PointFragment"
+        android:label="PointFragment" />
+    <dialog
+        android:id="@+id/dialogPointFragment"
+        android:name="ru.netology.andhw_08_maps.app.ui.DialogPointFragment"
+        android:label="DialogPointFragment" >
+        <action
+            android:id="@+id/action_dialogPointFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </dialog>
+</navigation>

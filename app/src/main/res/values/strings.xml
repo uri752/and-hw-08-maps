@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AndHW_08_maps</string>
+    <string name="need_permission">Please give access to your location</string>
+    <string name="to_point">Go to point</string>
+    <string name="name">Name of a point</string>
+    <string name="description">Description</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="add">Add</string>
+    <string name="menu_remove">Remove</string>
+    <string name="menu_edit">Edit</string>
+    <string name="empty">There is no point added</string>
+</resources>
